@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIZZOU GET</title>
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Owl Carousel CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom CSS File -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <!-- Start #header-->
+    <header id="header">
+        <div class="strip d-flex justify-content-between px-4 py-1 bg-light">
+            <p class="font-rale font-size-12 text-black-50 m-0">Welcome Tigers! Order your favorite foods and find nutrition facts at the touch of button!</p>
+            <div class="font-rale font-size-14">
+                <a href="#" class="px-3 border-right border-left text-dark">Login</a> 
+                <a href="#" class="px-3 border-right text-dark">Wishlist (0)</a> 
+            </div>
+        </div>
+        <!-- primary navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light navbar-dark color-second-bg">
+            <a class="navbar-brand" href="#">MIZZOU GET</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav m-auto font-rubik">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Dining Halls</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Category</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Menus</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Mizzou Markets</a>
+                  </li>
+              </ul>
+              <form action="#" class="form-size-14 font-rale">
+                  <a href="#" class="py-2 rounded-pill color-primary-bg">
+                      <span class="font-size-16 px-2 text-white"><i class="fas fa-shopping-cart"></i></span>
+                      <span class="px-3 py-2 rounded-pill text-dark bg-light">0</span>
+
+                  </a>
+              </form>
+            </div>
+          </nav>
+
+    </header>
+
+    <!-- start #main-site -->
+    <main id="main-site">
+
+        <!-- Shopping cart section -->
+        <section id="cart" class="py-3">
+            <div class="container-fluid w-75">
+                <h5 class="font-poppins font-size-20">Shopping Cart</h5>
+                <!-- shopping cart items -->
+                <div class="row">
+                    <div class="col-sm-9">
+                        <!-- cart item -->
+                        <div class="row border-top py-3 mt-3">
+                            <div class="col-sm-2">
+                                <img src="../assets/Foods/Cinnamon%20Rolls.jpg" style="width:120px; height:120px;" alt="cart1" class="img-fluid">
+                            </div>
+                            <div class="col-sm-8">
+                                <h5 class="font-poppins font-size-20 m-0">Cinnamon Rolls <small class="font-poppins font-size-12">(215 kcal per roll)</small></h5>
+                                <small><i class="fas fa-map-marker-alt color-primary"></i>&nbsp;&nbsp;Rollins @Night</small>
+
+                                <!-- product qty -->
+                                <div class="qty d-flex py-2">
+                                    <div class="d-flex font-rale w-25">
+                                        <button class="qty-up border bg-light" data-id="pro1"><i class="fas fa-angle-up"></i></button>
+                                        <input data-id="pro1" type="text" class="qty_input border px-2 w-100 bg-light" disabled value="1" placeholder="1">
+                                        <button data-id='pro1' class="qty-down border bg-light"><i class="fas fa-angle-down"></i></button>
+                                    </div>
+                                    <button type="submit" class="btn font-poppins text-danger px-3 border-right">Delete</button>
+                                    <button type="submit" class="btn font-poppins text-danger">Save for Later</button>
+
+                                </div>
+                                <!-- !product qty -->
+                            </div>
+
+                            <div class="col-sm-2 text-right">
+                                <div class="font-size-20 text-danger font-poppins">
+                                    $<span class="product_price">3.49</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row border-top py-3 mt-3">
+                            <div class="col-sm-2">
+                                <img src="../assets/Foods/Burrito.jpg" style="height:120px;" alt="cart1" class="img-fluid">
+                            </div>
+                            <div class="col-sm-8">
+                                <h5 class="font-poppins font-size-20 m-0">Burrito<small class="font-poppins font-size-12">(600 kcal per burrito)</small></h5>
+                                <small><i class="fas fa-map-marker-alt color-primary"></i>&nbsp;&nbsp;Baja Grill</small>
+
+                                <!-- product qty -->
+                                <div class="qty d-flex py-2">
+                                    <div class="d-flex font-rale w-25">
+                                        <button class="qty-up border bg-light"><i class="fas fa-angle-up"></i></button>
+                                        <input type="text" class="qty_input border px-2 w-100 bg-light" disabled value="1" placeholder="1">
+                                        <button class="qty-down border bg-light"><i class="fas fa-angle-down"></i></button>
+                                    </div>
+                                    <button type="submit" class="btn font-poppins text-danger px-3 border-right">Delete</button>
+                                    <button type="submit" class="btn font-poppins text-danger">Save for Later</button>
+
+                                </div>
+                                <!-- !product qty -->
+                            </div>
+
+                            <div class="col-sm-2 text-right">
+                                <div class="font-size-20 text-danger font-poppins">
+                                    $<span class="product_price">4.99</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- !cart item-->
+                    </div>
+                    <!-- subtotal section -->
+                    <div class="col-sm-3">
+                        <div class="sub-total border text-center mt-2">
+                            <h6 class="font-size-12 font-rale text-success py-2"><i class="fas fa-check"></i> Thanks for using Mizzou GET!</h6>
+                            <div class="border-top py-4">
+                                <h5 font-poppins font-size-20>Subtotal (2 items): &nbsp; <span class="text-danger">$ <span class="text-danger" id="deal-price">3.49</span></span> </h5>
+                                <button type="submit" class="btn btn-warning mt-3">Proceed to Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- !subtotal section -->
+                </div>
+                <!-- !shopping cart items-->
+            </div>
+        </section>
+        <!-- !Shopping cart section-->
+
+        <!-- New Phones -->
+        <section id="new-phones">
+            <div class="container py-5">
+                <h4 class="font-rubik font-size-20">New Phones</h4>
+                    <hr>
+
+                    <!-- Owl Carousel -->
+                    <div class="owl-carousel owl-theme">
+                        <div class="item py-2 bg-light">
+                            <div class="product font-rale">
+                                <a href="#"><img src="../assets/Dining%20Halls/Olive-and-Oil-Logo.jpg" alt="OO" class="img-fluid"></a>
+                                <div class="text-center">
+                                    <h6>Italian favorites!</h6>
+                                    <div class="rating text-warning font-size-12">
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="far fa-star"></i></span>
+                                    </div>
+                                    <div class="price py-2">
+                                        <span>Restaurants at Southwest</span>
+                                    </div>
+                                    <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item py-2 bg-light">
+                            <div class="product font-rale">
+                                <a href="#"><img src="../assets/Dining%20Halls/Morts.png" alt="Morts" class="img-fluid"></a>
+                                <div class="text-center">
+                                    <h6>Classic burgers and fries!</h6>
+                                    <div class="rating text-warning font-size-12">
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="far fa-star"></i></span>
+                                    </div>
+                                    <div class="price py-2">
+                                        <span>MU Student Center</spdan>
+                                    </div>
+                                    <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item py-2 bg-light">
+                            <div class="product font-rale">
+                                <a href="#"><img src="../assets/Dining%20Halls/Wheatstone.png" alt="Wheatstone" class="img-fluid"></a>
+                                <div class="text-center">
+                                    <h6>Paninis and pastries!</h6>
+                                    <div class="rating text-warning font-size-12">
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="far fa-star"></i></span>
+                                    </div>
+                                    <div class="price py-2">
+                                        <span>Memorial Union</span>
+                                    </div>
+                                    <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item py-2 bg-light">
+                            <div class="product font-rale">
+                                <a href="#"><img src="../assets/Dining%20Halls/Sabai.png" alt="Sabai" class="img-fluid"></a>
+                                <div class="text-center">
+                                    <h6>Southeast Asian Cuisine!</h6>
+                                    <div class="rating text-warning font-size-12">
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="far fa-star"></i></span>
+                                    </div>
+                                    <div class="price py-2">
+                                        <span>Johnston Hall</span>
+                                    </div>
+                                    <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item py-2 bg-light">
+                        <div class="product font-rale">
+                            <a href="#"><img src="../assets/Dining%20Halls/RollinsAtNight.png" alt="Rollins" class="img-fluid"></a>
+                            <div class="text-center">
+                                <h6>Pizza, Wings, and More!</h6>
+                                <div class="rating text-warning font-size-12">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="far fa-star"></i></span>
+                                </div>
+                                <div class="price py-2">
+                                    <span>Gillette and Hudson Hall</spdan>
+                                </div>
+                                <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="item py-2 bg-light">
+                            <div class="product font-rale">
+                                <a href="#"><img src="../assets/Dining%20Halls/Catalyst.png" alt="Catalyst" class="img-fluid"></a>
+                                <div class="text-center">
+                                    <h6>Scientific Sandwiches!</h6>
+                                    <div class="rating text-warning font-size-12">
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="far fa-star"></i></span>
+                                    </div>
+                                    <div class="price py-2">
+                                        <span>Bond Life Sciences Center</spdan>
+                                    </div>
+                                    <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                                </div>
+                            </div>
+                            </div>
+                    </div>
+                    <!-- !Owl Carousel -->
+
+            </div>
+        </section>
+        <!-- !New Phones -->
+
+    </main>
+    <!-- !start #main-site -->
+
+    <!-- start #footer -->
+    <footer id="footer" class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-12">
+                    <h4 class="font-rubik font-size-20">MIZZOU GET</h4>
+                    <p class="font-size-14 font-rale text-white-50">Order food at the touch of a button! Sign up for blogs, updates, and special events about Campus Dining Services though our monthly newsletter, too!</p>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <h4 class="font-rubik font-size-20">Newsletter</h4>
+                    <form class="form-row">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Email *">
+                        </div>
+                        <div class="col">
+                            <button type="submit" class="btn btn-primary mb-2">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-2 col-12">
+                    <h4 class="font-rubik font-size-20">Information</h4>
+                    <div class="d-flex flex-column flex-wrap">
+                        <a href="#" class="font-rale-font-size-14 text-white-50 pb-1">About Us</a>
+                        <a href="#" class="font-rale-font-size-14 text-white-50 pb-1">Pickup Info</a>
+                        <a href="#" class="font-rale-font-size-14 text-white-50 pb-1">Privacy Policy</a>
+                        <a href="#" class="font-rale-font-size-14 text-white-50 pb-1">Terms & Conditions</a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-12">
+                    <h4 class="font-rubik font-size-20">Account</h4>
+                    <div class="d-flex flex-column flex-wrap">
+                        <a href="#" class="font-rale-font-size-14 text-white-50 pb-1">My Account</a>
+                        <a href="#" class="font-rale-font-size-14 text-white-50 pb-1">Order History</a>
+                        <a href="#" class="font-rale-font-size-14 text-white-50 pb-1">Wish List</a>
+                        <a href="#" class="font-rale-font-size-14 text-white-50 pb-1">Newsletters</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+    <div class="copyright text-center bg-dark text-white py-2">
+        <p class="font-rale font-size-14">&copy; Copyrights 2022. Designed by <a href="#" class="color-second">Phillip Lei</a></p>
+    </div>
+    <!-- start #footer -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!-- Owl Carousel Js file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha256-pTxD+DSzIwmwhOqTFN+DB+nHjO4iAsbgfyFq5K5bcE0=" crossorigin="anonymous"></script>
+
+    <!-- isotope plugin cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Custom Javascript -->
+    <script src="index.js"></script>
+</body>
+</html>
